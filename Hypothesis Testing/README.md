@@ -25,6 +25,10 @@ You can tell the type of the test and the position of the critical region on the
 | <          | Lower-tailed test | left side of distribution  |
 | >          | Upper-tailed test | right side of distribution |
 
+## Z-Test
+
+Relies on Population charecteristics such as standard deviation $\sigma$.
+
 ### Critical Value Method
 
 **Note:**
@@ -69,3 +73,25 @@ After formulating the null and alternate hypotheses, the steps to follow in orde
 The power of any hypothesis test is defined by 1 - β.
 
 ![alt text](./images/typeOfError.png)
+
+### T distribution
+
+aka **Student - T distribution** is similar to normal distribution but shotter and flatter.
+Used when we don't have propulation characteristics such as standard deviation $\sigma$.
+
+![alt text](./images/tDistribution.png)
+The most important use of the T-distribution is that you can approximate the value of the **standard deviation of the population (σ)** from the **sample standard deviation (s)**.
+![alt text](./images/flowchart.png)
+Degrees of Freedom (df) = Sample Size(n) -1
+
+Setps
+
+1.
+
+### Two-sample mean test
+
+### Two-sample proportion test
+
+### A/B testing
+
+### Industry relevance
