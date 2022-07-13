@@ -82,16 +82,61 @@ Used when we don't have propulation characteristics such as standard deviation $
 ![alt text](./images/tDistribution.png)
 The most important use of the T-distribution is that you can approximate the value of the **standard deviation of the population (σ)** from the **sample standard deviation (s)**.
 ![alt text](./images/flowchart.png)
-Degrees of Freedom (df) = Sample Size(n) -1
 
-Setps
-
-1.
+1. A T-distribution is used whenever the standard deviation of the population is unknown
+2. The degrees of freedom of a T-distribution is equal to sample size n - 1
+3. For sample size ≥ 30, the T-distribution becomes the same as the normal distribution
+4. The output values and results of both t-test and z-test are same for sample size ≥ 30
 
 ### Two-sample mean test
 
+Paired
+
+1. It is used when your sample observations are from the same individual or object
+2. During this test, you are testing the same subject twice
+
+Unpaired
+
+1. During this test, you are not testing the same subject twice
+2. It is used when your sample observations are independent
+
 ### Two-sample proportion test
+
+1. It is used when your sample observations are categorical, with two categories
+
+2. It could be True/False, 1/0, Yes/No, Male/Female, Success/Failure, etc.
 
 ### A/B testing
 
-### Industry relevance
+1. A/B testing is a direct industry application of the two-sample proportion test
+
+2. It is a widely used process in digital companies in the ecommerce, manufacturing and advertising domains
+
+3. It provides a way to test two different versions of the same element and see which one performs better
+
+## Hypothesis Testing in Python
+
+1-sample t-test: testing the value of a population mean
+
+```
+scipy.stats.ttest_1samp()
+#or
+stats.ttest_1samp(data['column'], x)
+#where x is the mean value you want to test
+```
+
+2-sample t-test: testing for difference across populations
+
+```
+scipy.stats.ttest_ind()
+
+stats.ttest_ind(column_1,column_2)
+```
+
+Paired tests: repeated measurements on the same individuals
+
+```
+stats.ttest_rel()
+
+stats.ttest_rel(column_1,column_2)
+```
