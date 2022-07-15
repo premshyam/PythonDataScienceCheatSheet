@@ -18,6 +18,14 @@ Two key elements of dimensional modelling:
 
 ### Star Schema
 
+A schema is an outline of the entire data warehouse. It shows how different data sets are connected and how the different attributes of each data set are used for the data warehouse.
+
+Star Schema is the simplest and most effective schema in a data warehouse. A fact table in the center surrounded by multiple dimension tables resembles a star in the Star Schema model.
+
+![alt text](./images/starSchemaExample.jpeg)
+
+The fact table maintains one-to-many relations with all the dimension tables. Every row in a fact table is associated with its dimension table rows with a foreign key reference.
+
 ### SETL
 
 **Select:** Identification of the data that you want to analyse

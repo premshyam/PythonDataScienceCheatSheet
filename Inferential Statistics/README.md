@@ -148,3 +148,9 @@ Recall that you are doing sampling because you want to find the population mean,
 ![alt text](./images/confidenceLevel.png)
 
 you cannot finish step 3 without the CLT. The CLT lets you assume that the sample mean would be normally distributed, with mean \mu and standard deviation $\frac{\sigma}{\sqrt{n}}$ (approx. $\frac{S}{\sqrt{n}}$).
+
+### Additonal Notes
+
+To compute the population variance when you're dealing with proportions, we have the formula p(1-p), where p is the proportion.
+
+Example: on average 40% of trials are successful then 60% are failur so we can calculate the population variance with 0.4(1-0.4)=>0.4\*0.6=0.24
