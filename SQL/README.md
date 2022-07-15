@@ -62,6 +62,28 @@ The fact table maintains one-to-many relations with all the dimension tables. Ev
 - **Attribute:** It is a column in an entity type. For example, 'orderNumber' is an attribute in the 'orders' entity type.
 - **Relationship Types:** They are the lines between the tables. They define the relationships among the tables. These can be of various types based on their **cardinalities**, i.e., one-to-one, one-to-many, many-to-many, etc.
 
+### **Cardinality**
+
+Cardinality refers to the maximum number of times an instance in one entity can relate to instances of another entity.
+
+### **Ordinality/Modality**
+
+Ordinality is the minimum number of times an instance in one entity can be associated with an instance in the related entity
+
+### Common Relationships
+
+1. One --------+-
+
+2. Many --------<-
+
+3. Zero or Many --------o<-
+
+4. One or Many --------+<-
+
+5. One and only One -------++-
+
+6. Zero or One -------o+
+
 **Note:**
 
 1. self-referential relationship -> the table refers to itself.
